@@ -1,0 +1,1981 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='HeritageTreasures' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='clean data (heritage treasures)' inline='true' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='heritage treasures' name='excel-direct.0s7rxf619zix7t11hqe3y028al6i'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='F:/project/heritage treasures.xls' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0s7rxf619zix7t11hqe3y028al6i' name='clean data' table='[&apos;clean data$&apos;]' type='table'>
+          <columns gridOrigin='A1:K1083:no:A1:K1083:0' header='yes' outcome='2'>
+            <column datatype='integer' name='ID_NO' ordinal='0' />
+            <column datatype='string' name='Name_en' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='string' name='Country' ordinal='3' />
+            <column datatype='string' name='Location' ordinal='4' />
+            <column datatype='integer' name='Date_inscribed' ordinal='5' />
+            <column datatype='integer' name='Danger' ordinal='6' />
+            <column datatype='string' name='Endangered Year' ordinal='7' />
+            <column datatype='integer' name='Date_end' ordinal='8' />
+            <column datatype='string' name='Category' ordinal='9' />
+            <column datatype='string' name='Criterion' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K1083:no:A1:K1083:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_NO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_NO]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>ID_NO</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name_en</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name_en]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Name_en</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_inscribed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Date_inscribed]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Date_inscribed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Danger</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Danger]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Danger</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Endangered Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Endangered Year]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Endangered Year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_end</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Date_end]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Date_end</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Criterion</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Criterion]</local-name>
+            <parent-name>[clean data]</parent-name>
+            <remote-alias>Criterion</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Distinct Countries' datatype='integer' name='[Calculation_251638653129330693]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Country])' />
+      </column>
+      <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' caption='Danger (copy)' datatype='integer' name='[Danger (copy)_361413894344638464]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Danger]' />
+      </column>
+      <column caption='Date inscribed (copy)' datatype='date' datatype-customized='true' name='[Date inscribed (copy)_361413894348255234]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, STR([Date_inscribed]) )) ' />
+      </column>
+      <column caption='Date end' datatype='integer' name='[Date_end]' role='measure' type='quantitative' />
+      <column caption='Date inscribed' datatype='integer' name='[Date_inscribed]' role='measure' type='quantitative' />
+      <column caption='Id No' datatype='integer' name='[ID_NO]' role='dimension' type='ordinal' />
+      <column caption='Name en' datatype='string' name='[Name_en]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='clean data' datatype='table' name='[__tableau_internal_object_id__].[clean data_B8020097DFA74870981ACF6BE2363106]' role='measure' type='quantitative' />
+      <column-instance column='[Category]' derivation='Count' name='[cnt:Category:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Count' name='[cnt:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ID_NO]' derivation='Count' name='[cnt:ID_NO:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Count' name='[cum:cnt:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Count' name='[diff:cnt:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Count' name='[diff:cum:cnt:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Danger (copy)_361413894344638464]' derivation='None' name='[none:Danger (copy)_361413894344638464:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Count' name='[pcto:cum:cnt:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Date_inscribed]' derivation='Sum' name='[sum:Date_inscribed:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0ilj7m11x3foza0zvc4ln03g4gj7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/26/2025 03:51:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID_NO</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID_NO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID_NO</remote-alias>
+              <ordinal>0</ordinal>
+              <family>clean data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1082</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name_en</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name_en]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name_en</remote-alias>
+              <ordinal>1</ordinal>
+              <family>clean data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1082</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>clean data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>3</ordinal>
+              <family>clean data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>4</ordinal>
+              <family>clean data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date_inscribed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Date_inscribed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date_inscribed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>clean data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Danger</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Danger]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Danger</remote-alias>
+              <ordinal>6</ordinal>
+              <family>clean data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Endangered Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Endangered Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Endangered Year</remote-alias>
+              <ordinal>7</ordinal>
+              <family>clean data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date_end</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Date_end]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date_end</remote-alias>
+              <ordinal>8</ordinal>
+              <family>clean data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>9</ordinal>
+              <family>clean data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Criterion</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Criterion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Criterion</remote-alias>
+              <ordinal>10</ordinal>
+              <family>clean data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[clean data_B8020097DFA74870981ACF6BE2363106]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='1000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Danger (copy)_361413894344638464:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Latin America and the Caribbean&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Europe and North America&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Asia and the Pacific&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arab States&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Date inscribed (copy)_361413894348255234:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cum:cnt:Date inscribed (copy)_361413894348255234:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[diff:cnt:Date inscribed (copy)_361413894348255234:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[diff:cum:cnt:Date inscribed (copy)_361413894348255234:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[pcto:cum:cnt:Date inscribed (copy)_361413894348255234:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Category:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[sum:Date_inscribed:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='clean data' id='clean data_B8020097DFA74870981ACF6BE2363106'>
+            <properties context=''>
+              <relation connection='excel-direct.0s7rxf619zix7t11hqe3y028al6i' name='clean data' table='[&apos;clean data$&apos;]' type='table'>
+                <columns gridOrigin='A1:K1083:no:A1:K1083:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='ID_NO' ordinal='0' />
+                  <column datatype='string' name='Name_en' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='string' name='Country' ordinal='3' />
+                  <column datatype='string' name='Location' ordinal='4' />
+                  <column datatype='integer' name='Date_inscribed' ordinal='5' />
+                  <column datatype='integer' name='Danger' ordinal='6' />
+                  <column datatype='string' name='Endangered Year' ordinal='7' />
+                  <column datatype='integer' name='Date_end' ordinal='8' />
+                  <column datatype='string' name='Category' ordinal='9' />
+                  <column datatype='string' name='Criterion' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Bar chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#020206c6' fontname='Montserrat' fontsize='11'>Categories by sites count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Id No' datatype='integer' name='[ID_NO]' role='dimension' type='ordinal' />
+            <column-instance column='[ID_NO]' derivation='Count' name='[cnt:ID_NO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Category:nk]' value='#f7f1f6' />
+            <format attr='background-color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' value='#f7f1f6' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' scope='cols' value='2' />
+            <format attr='border-width' scope='rows' value='2' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e8edda' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#555555' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]</rows>
+        <cols>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Category:nk]</cols>
+      </table>
+      <simple-id uuid='{5770F3F5-99C1-4985-8B48-9CFCA47EEAFD}' />
+    </worksheet>
+    <worksheet name='Bubble chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Countries per Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column caption='Distinct Countries' datatype='integer' name='[Calculation_251638653129330693]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Country])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Country]' derivation='Count' name='[cnt:Country:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_251638653129330693]' derivation='User' name='[usr:Calculation_251638653129330693:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' direction='DESC' using='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[usr:Calculation_251638653129330693:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+            <format attr='color' data-class='total' value='#f28e2b' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='text-decoration' value='none' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='2' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='2' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f7f1f6' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Country:qk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[usr:Calculation_251638653129330693:qk]' />
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5BD5E347-7C2E-4DBC-9180-62637657A22D}' />
+    </worksheet>
+    <worksheet name='Line chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#020206c6' fontname='Montserrat' fontsize='8'>Year Forecasting of Heritages</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column caption='Date inscribed (copy)' datatype='date' datatype-customized='true' name='[Date inscribed (copy)_361413894348255234]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, STR([Date_inscribed]) )) ' />
+            </column>
+            <column caption='Date inscribed' datatype='integer' name='[Date_inscribed]' role='measure' type='quantitative' />
+            <column caption='Id No' datatype='integer' name='[ID_NO]' role='dimension' type='ordinal' />
+            <column-instance column='[ID_NO]' derivation='Count' name='[cnt:ID_NO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID_NO]' derivation='Count' forecast-column-base='[cnt:ID_NO:qk]' forecast-column-type='forecast-value' name='[fVal:cnt:ID_NO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date_inscribed]' derivation='Sum' forecast-column-base='[sum:Date_inscribed:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Date_inscribed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date_inscribed]' derivation='Sum' name='[sum:Date_inscribed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Year-Trunc' name='[tyr:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[tyr:Date inscribed (copy)_361413894348255234:qk]' scope='cols' value='Year of Date inscribed ' />
+            <format attr='tick-color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[tyr:Date inscribed (copy)_361413894348255234:qk]' value='#000000' />
+            <format attr='tick-color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[fVal:cnt:ID_NO:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' data-class='subtotal' scope='rows' value='auto' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[fVal:cnt:ID_NO:qk]' value='#ffffff' />
+            <format attr='background-color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[tyr:Date inscribed (copy)_361413894348255234:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[fVal:cnt:ID_NO:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-width' scope='cols' value='2' />
+            <format attr='border-width' scope='rows' value='2' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='cols' value='2' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[tyr:Date inscribed (copy)_361413894348255234:qk]' value='10' />
+            <format attr='color' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[tyr:Date inscribed (copy)_361413894348255234:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Forecast Indicator:nk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[fVal:sum:Date_inscribed:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[fVal:cnt:ID_NO:qk]</rows>
+        <cols>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[tyr:Date inscribed (copy)_361413894348255234:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Year-Trunc' range-size='10' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{EBF438B0-3C9D-40DB-9E57-47A6568B8CC7}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#020206c6' fontname='Montserrat' fontsize='10'>Analysis of Danger sites and Area of heritages</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column aggregation='Sum' caption='Danger (copy)' datatype='integer' name='[Danger (copy)_361413894344638464]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Danger]' />
+            </column>
+            <column datatype='integer' name='[Danger]' role='measure' type='quantitative' />
+            <column caption='Date inscribed (copy)' datatype='date' datatype-customized='true' name='[Date inscribed (copy)_361413894348255234]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, STR([Date_inscribed]) )) ' />
+            </column>
+            <column caption='Date inscribed' datatype='integer' name='[Date_inscribed]' role='measure' type='quantitative' />
+            <column caption='Id No' datatype='integer' name='[ID_NO]' role='dimension' type='ordinal' />
+            <column-instance column='[ID_NO]' derivation='Count' name='[cnt:ID_NO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Danger (copy)_361413894344638464]' derivation='None' name='[none:Danger (copy)_361413894344638464:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Count' name='[pcto:cum:cnt:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Date inscribed (copy)_361413894348255234]' derivation='Year-Trunc' name='[tyr:Date inscribed (copy)_361413894348255234:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Danger (copy)_361413894344638464:ok]'>
+            <groupfilter function='member' level='[none:Danger (copy)_361413894344638464:ok]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Danger (copy)_361413894344638464:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[pcto:cum:cnt:Date inscribed (copy)_361413894348255234:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='2' />
+            <format attr='border-color' data-class='total' scope='cols' value='#000000' />
+            <format attr='border-width' data-class='total' scope='rows' value='2' />
+            <format attr='border-color' data-class='total' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='2' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[pcto:cum:cnt:Date inscribed (copy)_361413894348255234:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk] + [federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[pcto:cum:cnt:Date inscribed (copy)_361413894348255234:qk])</rows>
+        <cols>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[tyr:Date inscribed (copy)_361413894348255234:qk]</cols>
+      </table>
+      <simple-id uuid='{BC60158E-0418-4A91-8161-3E8FDE70691F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#020206c6' fontname='Bell MT' fontsize='8'> Top 10 regions by area</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Id No' datatype='integer' name='[ID_NO]' role='dimension' type='ordinal' />
+            <column-instance column='[ID_NO]' derivation='Count' name='[cnt:ID_NO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Category])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Longitude (generated)]' field-type='quantitative' max='13986250.104636433' min='-5250518.4997800216' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Latitude (generated)]' field-type='quantitative' max='7705082.1593732992' min='-1580677.8489671787' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-size' scope='cols' value='2' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='light' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Country:nk]' />
+              <lod column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Country:nk]' />
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' />
+              <geometry column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Latitude (generated)]</rows>
+        <cols>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{76132BD1-91C8-4D76-8EF8-F9CF19D44520}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Montserrat' fontsize='10'> Regions by Heritage ended</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date end' datatype='integer' name='[Date_end]' role='measure' type='quantitative' />
+            <column-instance column='[Date_end]' derivation='Count' name='[cnt:Date_end:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date_end]' derivation='CountD' name='[ctd:Date_end:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date_end]' derivation='Sum' name='[sum:Date_end:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[sum:Date_end:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[sum:Date_end:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Longitude (generated)]' field-type='quantitative' max='15394466.934306096' min='5096699.5424202699' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Latitude (generated)]' field-type='quantitative' max='2823838.1197735895' min='-1595446.7638308795' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='2' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Date_end:qk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Country:nk]' />
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[ctd:Date_end:qk]' />
+              <geometry column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Latitude (generated)]</rows>
+        <cols>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{EB0AC1BE-8364-4380-9475-36AD08FEEDD1}' />
+    </worksheet>
+    <worksheet name='Tree chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#020206c6' fontname='Montserrat' fontsize='10'>Danger Sites prone to Extinction</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column datatype='integer' name='[Danger]' role='measure' type='quantitative' />
+            <column caption='Date end' datatype='integer' name='[Date_end]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Danger]' derivation='Count' name='[cnt:Danger:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date_end]' derivation='Count' name='[cnt:Date_end:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Danger:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Date_end:qk]' included-values='non-null' />
+          <computed-sort column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' direction='DESC' using='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Danger:qk]' />
+          <slices>
+            <column>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Danger:qk]</column>
+            <column>[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Date_end:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='2' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Danger:qk]' />
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Danger:qk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Danger:qk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Date_end:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4BE39628-5628-4777-A9DD-60E60A66E457}' />
+    </worksheet>
+    <worksheet name='pie chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Sites Count per Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean data (heritage treasures)' name='federated.0znhbfn0hdzesu1b9nnq81hvjcd4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znhbfn0hdzesu1b9nnq81hvjcd4'>
+            <column caption='Id No' datatype='integer' name='[ID_NO]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[ID_NO]' derivation='Count' name='[cnt:ID_NO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ID_NO]' derivation='Count' name='[pcto:cnt:ID_NO:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+            <format attr='text-align' value='center' />
+            <format attr='font-size' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' value='9' />
+            <format attr='text-align' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' value='right' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#69aaa5' />
+            <format attr='font-size' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' value='8' />
+            <format attr='vertical-align' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' value='bottom' />
+            <format attr='text-align' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#000000' />
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#b6992d' />
+            <format attr='border-width' value='3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='2' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' />
+              <wedge-size column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' />
+              <size column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' />
+              <text column='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[pcto:cnt:ID_NO:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{730E66AA-6F78-47A1-B41B-E39797250365}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Montserrat' fontsize='15'>UNESCO World Heritage Site Overview</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f3faf9' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#00007f' />
+          <format attr='border-style' value='solid' />
+          <format attr='border-color' value='#000000' />
+          <format attr='border-width' value='4' />
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='24' param='horz' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='98002' id='7' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+              <zone h='98002' id='5' type-v2='layout-basic' w='99034' x='483' y='999'>
+                <zone h='98002' id='3' type-v2='text' w='99034' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='5993' id='8' type-v2='title' w='79962' x='2066' y='2497' />
+        <zone h='47690' id='12' name='Bar chart' w='22918' x='2066' y='9488' />
+        <zone h='46067' id='13' name='pie chart' w='29618' x='26362' y='10362' />
+        <zone h='45818' id='19' name='Sheet 3' w='42016' x='56230' y='10487' />
+        <zone h='45693' id='22' name='Line chart' w='47401' x='1252' y='57303' />
+        <zone h='43945' id='25' name='Bubble chart' w='49656' x='49029' y='56554' />
+        <zone h='6866' id='26' type-v2='dashboard-object' w='14590' x='82405' y='2122'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{DCBF3F78-98D7-42EB-8F95-62DE99A9859E}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Go To Next</caption>
+              <tooltip-text>kk</tooltip-text>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='2' />
+              <format attr='border-color' value='#ffffff' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontname='Montserrat' fontsize='15'>UNESCO World Heritage Site Overview</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='39' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone h='5993' id='8' type-v2='title' w='79962' x='2066' y='2497'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='98002' id='3' type-v2='text' w='99034' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6866' id='26' type-v2='dashboard-object' w='14590' x='82405' y='2122'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{DCBF3F78-98D7-42EB-8F95-62DE99A9859E}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Go To Next</caption>
+                      <tooltip-text>kk</tooltip-text>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='2' />
+                      <format attr='border-color' value='#ffffff' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47690' id='12' is-fixed='true' name='Bar chart' w='22918' x='2066' y='9488'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46067' id='13' is-fixed='true' name='pie chart' w='29618' x='26362' y='10362'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45818' id='19' is-fixed='true' name='Sheet 3' w='42016' x='56230' y='10487'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43945' id='25' is-fixed='true' name='Bubble chart' w='49656' x='49029' y='56554'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45693' id='22' is-fixed='true' name='Line chart' w='47401' x='1252' y='57303'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4688A326-087D-48EC-9C5A-A00D0510B7E3}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Montserrat' fontsize='15'>UNESCO Danger Sites Overview</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#00007f' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='17' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='4495' id='18' type-v2='title' w='99034' x='483' y='999'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93507' id='11' param='horz' type-v2='layout-flow' w='99034' x='483' y='5494'>
+              <zone h='93507' id='5' param='vert' type-v2='layout-flow' w='99034' x='483' y='5494'>
+                <zone h='93507' id='6' type-v2='layout-basic' w='99034' x='483' y='5494' />
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6367' id='8' type-v2='dashboard-object' w='12148' x='564' y='1623'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{2E493EDA-0682-4DBD-935F-FB151400DAED}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Go To prev</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#000000' />
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='44195' id='9' name='Sheet 6' w='44834' x='1440' y='10362' />
+        <zone h='89014' id='13' name='Sheet 10' w='49969' x='47026' y='9988' />
+        <zone h='41823' id='14' name='Tree chart' w='44709' x='1440' y='54682' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Montserrat' fontsize='15'>UNESCO Danger Sites Overview</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='31' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone h='4495' id='18' type-v2='title' w='99034' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6367' id='8' type-v2='dashboard-object' w='12148' x='564' y='1623'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{2E493EDA-0682-4DBD-935F-FB151400DAED}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Go To prev</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#000000' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='89014' id='13' is-fixed='true' name='Sheet 10' w='49969' x='47026' y='9988'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44195' id='9' is-fixed='true' name='Sheet 6' w='44834' x='1440' y='10362'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41823' id='14' is-fixed='true' name='Tree chart' w='44709' x='1440' y='54682'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D774565A-235B-455D-81FD-23DC6B470411}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' underline='true'>Heritage Treasures</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='391' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='13' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5187' id='14' type-v2='title' w='98426' x='787' y='830'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93153' id='11' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='6017'>
+              <zone h='93153' id='9' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='6017'>
+                <zone h='93153' id='7' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='6017'>
+                  <zone h='93153' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='6017'>
+                    <zone fixed-size='120' h='12448' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6017' />
+                    <zone h='80705' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='18465'>
+                      <flipboard active-id='6' nav-type='caption' show-nav-arrows='true'>
+                        <story-points>
+                          <story-point caption='Cultural sites dominate the heritage list with 849 entries, highlighting their global historical significance. In contrast, Mixed sites are rare with just 36, showing limited dual-value recognition' captured-sheet='Bar chart' id='1' />
+                          <story-point caption='Europe and North America account for nearly half (46.49%) of all World Heritage sites. Latin America and the Caribbean represent 12.85% of the total' captured-sheet='pie chart' id='2' />
+                          <story-point caption='China and Italy  has the highest number of heritage treasures by area, followed by Iran and Mexico. These countries are rich in cultural and natural wonders' captured-sheet='Sheet 3' id='3'>
+                            <capturedDeltas>
+                              <worksheet name='Sheet 3'>
+                                <style delta-type='added'>
+                                  <style-rule element='axis'>
+                                    <encoding attr='space' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Latitude (generated)]' field-type='quantitative' max='11876588.360014237' min='-1486161.675814528' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                                    <encoding attr='space' class='0' field='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[Longitude (generated)]' field-type='quantitative' max='13519925.331826862' min='-932943.98763471376' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                                  </style-rule>
+                                </style>
+                              </worksheet>
+                            </capturedDeltas>
+                          </story-point>
+                          <story-point caption='The number of heritage sites changes every year. Some years saw big jumps, and the future looks steady with slight growth.' captured-sheet='Line chart' id='4' />
+                          <story-point caption='Europe and North America include the most countries with heritage treasures. Asia and Africa also have many countries contributing to the list' captured-sheet='Bubble chart' id='6' />
+                          <story-point caption='Some countries like Iran, Tunisia, and Congo had heritage sites that are no longer listed. These sites may have been removed or lost.' captured-sheet='Sheet 6' id='7' />
+                          <story-point caption='Europe and North America have the most heritage sites in danger (503), followed by Asia and Africa. These places need extra care to protect their treasures.' captured-sheet='Tree chart' id='8' />
+                          <story-point caption='From 1978 to 2018, the number of endangered heritage sites has gone up. The green line shows how quickly the danger has increased over time' captured-sheet='Sheet 10' id='9' />
+                        </story-points>
+                      </flipboard>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{A7E20641-F760-4BB0-8178-ED6D45A93B90}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='36'>
+            <card type='columns' />
+          </strip>
+          <strip size='36'>
+            <card type='rows' />
+          </strip>
+          <strip size='36'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EF14746A-08D4-49B3-87D7-6CC2B993D59D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Bubble chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='36'>
+            <card type='columns' />
+          </strip>
+          <strip size='36'>
+            <card type='rows' />
+          </strip>
+          <strip size='36'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{311B8430-4093-46CC-88E7-CF12751E2954}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[ctd:Date_end:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ADD8ED03-DF27-4066-971F-FE2B6105FEDE}' />
+    </window>
+    <window class='worksheet' name='Tree chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:Danger:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C34F2B0A-0E59-48AE-8911-EB6B85F0888E}' />
+    </window>
+    <window class='worksheet' name='Line chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E1D7B8A-E265-4F0E-83C7-AAE5DA374CA2}' />
+    </window>
+    <window class='worksheet' name='Bar chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{678E8F3F-6BD5-43C9-B9EB-47CE8F8DA9D4}' />
+    </window>
+    <window class='worksheet' name='pie chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[none:Region:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[cnt:ID_NO:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{399B7646-AAD8-4DD8-8110-458F6A26EF90}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='40'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0znhbfn0hdzesu1b9nnq81hvjcd4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B345CFE-1F8B-4018-841A-229331B6D20B}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Bar chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bubble chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Line chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='pie chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='25' />
+      <simple-id uuid='{2E493EDA-0682-4DBD-935F-FB151400DAED}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tree chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DCBF3F78-98D7-42EB-8F95-62DE99A9859E}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{A0B489A2-54F4-41F8-AD39-11BE61481417}' />
+    </window>
+  </windows>
+</workbook>
